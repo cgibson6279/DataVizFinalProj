@@ -22,7 +22,7 @@ let state = {
 };
 
 /* LOAD DATA */
-d3.json("../data/filtered_data/book_vectors_no_vector.json", d3.autoType).then(raw_data => {
+d3.json("../data/book_vectors_no_vector.json", d3.autoType).then(raw_data => {
   console.log("data", raw_data);
   // save our data to application state
   state.data = raw_data;
