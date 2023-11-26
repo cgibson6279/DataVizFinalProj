@@ -1,0 +1,26 @@
+# Paths to gutenberg data files
+PROJECT_ROOT: Final Data Viz Project
+META_DATA_CSV_PATH: data/gutenberg/metadata/metadata.csv
+PATH_TO_TEXT_DATA_FILES: data/gutenberg/data/text
+PATH_TO_TEXT_TOKEN_FILES: data/gutenberg/data/tokens
+PATH_TO_TEXT_TOKEN_COUNT_FILES: data/gutenberg/data/counts
+# Paths filtered data files
+FILTERED_DATA_DIR: data/filtered_data
+FILTERED_META_DATA_CSV_OUTPATH: filtered_metadata.csv
+PATH_TO_FILTERED_TEXT_DATA_FILES: data/filtered_data/data/text
+PATH_TO_FILTERED_TEXT_TOKEN_FILES: data/filtered_data/data/tokens
+PATH_TO_FILTERED_TEXT_COUNT_FILES: data/filtered_data/data/counts
+# Genre categories
+GENRES:
+  - fiction
+  - adventure 
+  - fantasy
+  - humor
+  - horror
+  - western
+  - science fiction
+  - short stories
+# Author filters
+AUTHORS:
+  - Various
+  - Anonymous
