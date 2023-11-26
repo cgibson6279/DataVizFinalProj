@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <head>
+    <header>
+        <aside>Nov 20, 2023</aside>
+        <a href="../" rel="author">Cameron Gibson</a>
+    </header>
+    <meta charset="utf-8">
+    <title>Project Gutenberg Books</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body style="background-color:#F8F4E7; color: #552800;">
+    <h1 style="text-align:center;">Project Gutenberg Books</h1>
+    <p> Project Gutenberg is a library of over 70,000 free eBooks that is often used
+      for natural language processing research. Here, I have conducted a similarity 
+      analysis collected ~12,000 full texts from the Project Gutenberg library under the Science Fiction, 
+      Fantasy Fiction, Young Adult Fiction, Historical Fiction, Mystery Fiction, General Fiction,
+      Short Stories, Humor, Western Fiction, Adventure Fiction.
+    </p>
+    <p>
+      SpaCy text vectorization was used in order to create vector representations of length 300 for each individual book.
+      T-SNE dimensionality reduction was then used to reduce the dimensions of each book vector to length 2,
+      while maintaining as much information as possible about each text. Book represenations are then plotted on on a 2-D cartesian coordinate
+      plane to show general high level comparison between texts.
+    </p>
+    <label style="text-align:center;" for="dropdown">Genres:</label>
+    <select style="text-align:center;" id="dropdown" name="dropdown"></select>
+    <div id="container" style="text-align:center;"> </div>
+    <script src="../lib/d3.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+    <body style="background-color:#F8F4E7; color: #552800;"></body>
+    <head>
+        <meta charset="utf-8">
+        <header>
+            <aside>Nov 20, 2023</aside>
+            <a href="../" rel="author">Cameron Gibson</a>
+        </header>
+        <title>Project Gutenberg Analysis</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1><i>Project Gutenberg Books</i></h1>
+        <label for="dropdown">Genres:</label>
+        <select id="dropdown" name="dropdown"></select>
+        <div>
+            Scatter Plot Container
+        </div>
+        <script src="../lib/d3.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html> -->
